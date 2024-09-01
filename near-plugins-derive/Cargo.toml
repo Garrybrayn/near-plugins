@@ -17,9 +17,8 @@ proc-macro-crate.workspace = true
 
 [dev-dependencies]
 anyhow.workspace = true
-borsh.workspace = true
 near-plugins.workspace = true
-near-sdk.workspace = true
+near-sdk = { workspace = true, features = ["unit-testing"] }
 tokio.workspace = true
-workspaces.workspace = true
+near-workspaces.workspace = true
 toml.workspace = true
